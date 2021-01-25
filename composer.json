@@ -1,0 +1,30 @@
+{
+    "name": "fcpmike/notification",
+    "description": "This is a library that use composer as the basis for generating email notifications",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabiano Morais",
+            "email": "fcpm_mike@hotmail.com"
+        },
+        {
+            "name": "Gustavo Web",
+            "email": "gustavo@upinside.com.br",
+            "homepage": "https://www.upinside.com.br",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpmailer/phpmailer": "6.2.0"
+    },
+    "config":{
+    	"vendor-dir": "lib_ext"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"Notification\\": "_app"
+    	}
+    }
+}
